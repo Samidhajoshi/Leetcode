@@ -2,7 +2,7 @@
 Problem 1: Two Sum
 Problem Link: https://leetcode.com/problems/two-sum/
 */
-
+// Brute force nested loop
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -18,3 +18,4 @@ public:
         return {};
     }
 };
+// Time complexity O(n^2)
