@@ -1,7 +1,7 @@
 /*
 Day 2 of Solving Daily leetcode problems
 Problem 3:- Container with most water 
-
+Problem link :https://leetcode.com/problems/container-with-most-water/
 Today I am sharing two approaches to the problem.
 First is a brute force approach which exceeded the time limit . Time complexity O(n^2) due to nested loop 
 And second is the optimised two pointer approach with time complexity O(n).
