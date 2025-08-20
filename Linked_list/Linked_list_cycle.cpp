@@ -1,6 +1,6 @@
 /*
 This is day 6 of solving daily leetcode questions.
-Problem 11: Linked list cycle
+Problem 13: Linked list cycle
 Problem link -https://leetcode.com/problems/linked-list-cycle/
 
 Approach - Two pointer approach 
