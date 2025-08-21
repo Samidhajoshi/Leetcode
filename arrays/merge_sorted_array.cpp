@@ -2,7 +2,9 @@
 Day 1 of Solving Daily leetcode problems.
 Problem 2: Merge two sorted arrays
 Problem link: https://leetcode.com/problems/merge-sorted-array/
+preferred approach -Approach 1
 */
+// Approach 1
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -22,5 +24,31 @@ public:
             nums1[k--] = nums2[j--];
         }
     }
+};// Final Time complexity O(m+n)
+/*
+Approach 2 
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int i=0,j=0;
+        int k=0;
+        if(n==0) return;
+        while(i<m){
+            if(nums1[i]>nums2[j]){
+                int t=nums1[i];
+                nums1[i]=nums2[j];
+                nums2[j]=t;
+
+            }
+            sort(nums2.begin(),nums2.end());
+               i++;
+          
+        }
+             while(j<n){
+                    nums1[i++]=nums2[j++];
+                }
+        
+    }
 };
-// Final Time complexity O(m+n)
+*/
+
